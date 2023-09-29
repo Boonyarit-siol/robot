@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230920 08:50:22.497" rpa="false" schemaversion="4">
+<suite id="s1" name="Input" source="C:\Users\20231865\test\input.robot">
+<test id="s1-t1" name="Open Website and Input Value" line="21">
+<kw name="Open Website">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230920 08:50:23.089" level="INFO">Opening browser 'chrome' to base url 'http://localhost:44322/AE302.aspx'.</msg>
+<status status="PASS" starttime="20230920 08:50:23.089" endtime="20230920 08:50:27.000"/>
+</kw>
+<status status="PASS" starttime="20230920 08:50:23.089" endtime="20230920 08:50:27.000"/>
+</kw>
+<kw name="InputValueIntoField">
+<arg>${column_locator}</arg>
+<arg>${input_value}</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>${value}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230920 08:50:27.002" level="INFO">Typing text '20231865' into text field 'id=ContentPlaceHolder1_GVUserAccess_DXFREditorcol1_I'.</msg>
+<status status="PASS" starttime="20230920 08:50:27.001" endtime="20230920 08:50:27.311"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230920 08:50:32.312" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230920 08:50:27.312" endtime="20230920 08:50:32.312"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Input value: ${value}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230920 08:50:32.312" level="INFO">Input value: 20231865</msg>
+<status status="PASS" starttime="20230920 08:50:32.312" endtime="20230920 08:50:32.312"/>
+</kw>
+<status status="PASS" starttime="20230920 08:50:27.001" endtime="20230920 08:50:32.313"/>
+</kw>
+<status status="PASS" starttime="20230920 08:50:23.088" endtime="20230920 08:50:32.313"/>
+</test>
+<status status="PASS" starttime="20230920 08:50:22.504" endtime="20230920 08:50:32.315"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Input">Input</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20230918 16:08:20.484" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="C:\Users\20231865\test">
+<suite id="s1-s1" name="Retest" source="C:\Users\20231865\test\retest.robot">
+<test id="s1-s1-t1" name="Open Google Website" line="37">
+<status status="FAIL" starttime="20230918 16:08:20.957" endtime="20230918 16:08:20.958">Test cannot be empty.</status>
+</test>
+<status status="FAIL" starttime="20230918 16:08:20.553" endtime="20230918 16:08:20.961"/>
+</suite>
+<status status="FAIL" starttime="20230918 16:08:20.520" endtime="20230918 16:08:20.964"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Test">Test</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Retest">Test.Retest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
